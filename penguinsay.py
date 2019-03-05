@@ -11,9 +11,9 @@
 #       '.____________________.'
 #       /
 #   __
-# ( 'v')
+# ( 'v')  
 #//-=-\\
-#(\_=_/)
+#(\_=_/)  
 # ^^ ^^
 #================================================================================
 
@@ -39,6 +39,7 @@ def talk(chatbot, args):
     printResponse(response.text)
     drawACutePenguin(args.mode)
     if(args.loop):
+        text = ''
         print("\033[1;36mYou're in looping mode. Say anything. \nSay 'Good bye' if you want to exit...\033[0m")
         while(text != 'Good bye'):
             text = input()
@@ -80,6 +81,12 @@ def drawACutePenguin(mode):
     elif(mode == "bigeye4"):
         print(" \033[1;34m  __\033[0m")
         print(" \033[1;34m(\033[0m Q\033[1;33mv\033[0mQ\033[1;34m)\033[0m")
+        print("\033[1;34m/\033[0m/-=-\\\033[1;34m\\\033[0m")
+        print("\033[1;34m(\033[0m\\_=_/\033[1;34m)\033[0m")
+        print(" \033[1;33m^^ ^^\033[0m")
+    elif(mode == "samurai"):
+        print(" \033[1;33m <<_>>\033[0m")
+        print(" \033[1;34m(\033[0m \\\033[1;33mv\033[0m/\033[1;34m)\033[0m")
         print("\033[1;34m/\033[0m/-=-\\\033[1;34m\\\033[0m")
         print("\033[1;34m(\033[0m\\_=_/\033[1;34m)\033[0m")
         print(" \033[1;33m^^ ^^\033[0m")
